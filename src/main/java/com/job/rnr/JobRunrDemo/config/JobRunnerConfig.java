@@ -19,7 +19,7 @@ public class JobRunnerConfig {
                 .useStorageProvider(SqlStorageProviderFactory
                         .using(dataSource))
                 .useBackgroundJobServer()
-                .useDashboard()
+               // .useDashboard()  -- comment it if ur running multiple instances
                 .initialize().getJobScheduler();
     }
 }
